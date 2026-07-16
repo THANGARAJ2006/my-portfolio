@@ -9,6 +9,7 @@ const navLinks = [
   { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
   { label: "Education", href: "#education" },
+  { label: "Game", href: "#game" },
   { label: "Projects", href: "#projects" },
   { label: "Contact", href: "#contact" },
 ];
@@ -61,7 +62,7 @@ export default function Navbar() {
                 href={link.href}
                 className={`relative px-4 py-2 text-sm font-medium transition-colors duration-300 ${
                   active === link.href
-                    ? "text-[#00d4ff]"
+                    ? "text-[#facc15]"
                     : "text-white/60 hover:text-white"
                 }`}
               >
@@ -72,7 +73,7 @@ export default function Navbar() {
                     className="absolute bottom-0 left-1/2 -translate-x-1/2 w-5 h-[2px] rounded-full"
                     style={{
                       background:
-                        "linear-gradient(90deg, #00d4ff, #a855f7)",
+                        "linear-gradient(90deg, #facc15, #eab308)",
                     }}
                     transition={{ type: "spring", stiffness: 300, damping: 30 }}
                   />
@@ -110,7 +111,7 @@ export default function Navbar() {
                 onClick={() => setMobileOpen(false)}
                 className={`text-2xl font-semibold transition-colors ${
                   active === link.href
-                    ? "text-[#00d4ff]"
+                    ? "text-[#facc15]"
                     : "text-white/60 hover:text-white"
                 }`}
               >
